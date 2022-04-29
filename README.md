@@ -10,9 +10,10 @@ to run the database code:
   5. run the whole code then you can select which table you would like to view by running the specific line the table is viewed in. 
             for example, running this line will only display the allergy table:
                 SELECT * FROM allergy;
-  6. the following lines of code are run in the JavaMySQLTest to connect the mysql database we created to the java file:
+  6. The .jar file found in the lib folder must be added to the referenced library folder.
+  7. the following lines of code are run in the JavaMySQLTest to connect the mysql database we created to the java file:
       String url = "jdbc:mysql://localhost:3306/test1";
 		  String username = "root";
 		  String password = "password"; 
       
-      
+  
