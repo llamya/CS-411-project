@@ -15,7 +15,7 @@ public class JavaMySQLTest {
 	public JavaMySQLTest(){
 		String url = "jdbc:mysql://localhost:3306/test1";
 		String username = "root";
-		String password = "MoSiri29";
+		String password = "password";
 		
 		try {
 			connection = DriverManager.getConnection(url, username, password);
