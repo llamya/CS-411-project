@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    height: 400vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+    size: cover;
+    background-position: center;
+    position: absolute;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.logo  {
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(255, 166, 0);
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    transition: 0.5s;;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content h1{
+    color: white;
+    margin-top: 100px;
+}
+.content ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.content ul li a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+}
+.row{
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+}
+.recipe-rest-name{
+    flex-basis: 31%;
+    background: rgb(184, 120, 3);
+    border-radius: 10px;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+.recipe-rest-name h4{
+    color: rgb(159, 238, 159);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
